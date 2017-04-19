@@ -120,6 +120,24 @@ describe('SAR main page', function() {
         expect(loginTextField.getText()).toEqual("Login");
         expect(loginButton.getText()).toEqual("Login");
     });
+
+    it ('filtrar por modelo', function() {
+      element(by.id('filters')).click();
+      var model = element(by.id('md-input-11'));
+      model.sendKeys("XXXXX");
+      model.sendKeys(protractor.Key.ENTER);
+      element(by.id('columns')).click();
+      browser.driver.sleep(20000);
+
+
+      var teste = element(by.id('listColumn')).all(By.tagName('li'));
+      var mo = teste.get(0);
+      var yes = teste.get(1);
+      var outer = teste.get(2);
+      expect(mo.getText()).toBe("MO");
+      expect(yes.getText()).toBe("YES");
+      expect(outer.getText()).toBe("REPAIR FROM OUTER");
+    });
 });
 
 
