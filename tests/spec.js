@@ -138,6 +138,13 @@ describe('SAR main page', function() {
       expect(yes.getText()).toBe("YES");
       expect(outer.getText()).toBe("REPAIR FROM OUTER");
     });
+
+
+
+    it ('test', function() {
+
+      expect("teste").toBe("teste");
+    });
 });
 
 
