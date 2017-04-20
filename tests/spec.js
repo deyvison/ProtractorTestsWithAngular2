@@ -31,9 +31,9 @@ describe('SFIS Manager login page', function() {
 
         browser.driver.sleep(20000);
 
-        var name = browser.findElement(by.className('name'));
-        var home = browser.findElement(by.className('nav-menu-selection mat-ripple'));
-        var signOut = browser.findElement(by.className('sign-out'));
+        // var name = browser.findElement(by.className('name'));
+        // var home = browser.findElement(by.className('nav-menu-selection mat-ripple'));
+        // var signOut = browser.findElement(by.className('sign-out'));
 
         // expect(name.getText()).toBe('Anne Lorayne Moreira');
         // expect(home.getText()).toBe('HOME');
