@@ -144,7 +144,7 @@ describe('SFIS Manager login page', function() {
     it ('test', function() {
 
       expect("teste").toBe("teste");
-    });
+    //});
 });
 
 
